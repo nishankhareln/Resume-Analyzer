@@ -1,0 +1,27 @@
+streamlit
+google-generativeai
+python-dotenv
+pdf2image
+
+
+1.fie;d to put my JD
+2.upload pdf2image
+3.pdf toi image
+4.prompt template
+
+
+ Google suggests switching to a different model, such as gemini-1.5-flash,
+
+ model = genai.GenerativeModel('gemini-1.5-flash')
+
+
+In this solution, a PDF resume is uploaded and processed by 
+converting the first page into an image using pdf2image, and 
+then extracting the text from the image with the help of Tesseract OCR 
+(pytesseract).
+The text is analyzed to identify specific skills such as Python, Data Science, SQL, etc., 
+using regular expressions. If any skills are missing from the resume, the system suggests online resources
+(such as courses or tutorials) that the user can explore to learn those skills. Additionally, 
+the resume is evaluated against a provided job description using the Google Gemini model to
+generate a professional assessment of how well the resume aligns with the job requirements. 
+This process not only helps users improve.
